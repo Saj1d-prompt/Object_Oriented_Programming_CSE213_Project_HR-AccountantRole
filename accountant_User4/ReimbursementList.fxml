@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="406.0" prefWidth="781.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="accountant_User4.ReimbursementListController">
+   <children>
+      <TableView fx:id="reimbursementTableView" layoutX="27.0" layoutY="103.0" prefHeight="200.0" prefWidth="731.0">
+        <columns>
+          <TableColumn fx:id="nameTableColumn" prefWidth="112.0" text="Name" />
+          <TableColumn fx:id="idTableColumn" prefWidth="116.0" text="ID" />
+            <TableColumn fx:id="deptTableColumn" prefWidth="119.0" text="Department" />
+            <TableColumn fx:id="statusTableColumn" prefWidth="131.0" text="Status" />
+            <TableColumn fx:id="etTableColumn" prefWidth="125.0" text="Expense Type" />
+            <TableColumn fx:id="amountTableColumn" prefWidth="127.0" text="Amount" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

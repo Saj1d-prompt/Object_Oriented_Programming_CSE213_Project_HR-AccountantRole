@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="428.0" prefWidth="662.0" style="-fx-background-color: lime;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="accountant_User4.MonthlyIncomeStatementReportController">
+   <children>
+      <Label layoutX="214.0" layoutY="28.0" prefHeight="30.0" prefWidth="198.0" style="-fx-background-color: lime;" text="Monthly Income Statement" underline="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="132.0" layoutY="157.0" text="Expenses" />
+      <Label layoutX="132.0" layoutY="111.0" text="Total Income" />
+      <Label layoutX="132.0" layoutY="256.0" text="Total Net Profit" />
+      <TextField fx:id="expenseTextField" layoutX="283.0" layoutY="152.0" />
+      <TextField fx:id="totalProfitTextField" layoutX="283.0" layoutY="106.0" />
+      <Button layoutX="132.0" layoutY="334.0" mnemonicParsing="false" onAction="#calculateTotalProfitOnMouseClick" text="Calculate Total Profit" />
+      <Button layoutX="397.0" layoutY="334.0" mnemonicParsing="false" onAction="#generatePDFOnMouseClick" text="Generate PDF" />
+      <Label layoutX="132.0" layoutY="204.0" text="Owners Withdrawal" />
+      <TextField fx:id="withdrawalTextField" layoutX="283.0" layoutY="199.0" />
+      <Label fx:id="netIncomeLabel" layoutX="283.0" layoutY="251.0" prefHeight="31.0" prefWidth="187.0" />
+   </children>
+</AnchorPane>

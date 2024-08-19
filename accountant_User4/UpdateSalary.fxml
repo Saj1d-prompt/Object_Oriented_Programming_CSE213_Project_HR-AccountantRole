@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="606.0" prefWidth="831.0" style="-fx-background-color: #8678da;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="accountant_User4.UpdateSalaryController">
+   <children>
+      <Label layoutX="363.0" layoutY="38.0" prefHeight="38.0" prefWidth="106.0" text="Update Salary" underline="true">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="112.0" layoutY="116.0" text="Employee ID" />
+      <Label layoutX="112.0" layoutY="165.0" text="Employee Name" />
+      <Label layoutX="112.0" layoutY="218.0" text="Department" />
+      <Label layoutX="112.0" layoutY="270.0" text="Salary Increment %" />
+      <Label layoutX="112.0" layoutY="315.0" text="Old Salary" />
+      <Button layoutX="166.0" layoutY="422.0" mnemonicParsing="false" onAction="#updateNewSalaryOnMouseClick" text="Update New Salary" />
+      <Button layoutX="506.0" layoutY="422.0" mnemonicParsing="false" onAction="#upddatedListButtonOnMouseClick" text="Updated List" />
+      <ComboBox fx:id="employeeIDComboBox" layoutX="288.0" layoutY="111.0" onAction="#employeeIDSelectOnMouseClick" prefWidth="150.0" />
+      <TextField fx:id="employeeNameTextField" editable="false" layoutX="288.0" layoutY="160.0" />
+      <TextField fx:id="deptTextField" editable="false" layoutX="288.0" layoutY="213.0" />
+      <TextField fx:id="salaryIncrementTextField" editable="false" layoutX="288.0" layoutY="265.0" />
+      <TextField fx:id="oldSalaryTextField" layoutX="288.0" layoutY="310.0" />
+      <Label layoutX="112.0" layoutY="363.0" text="New Salary" />
+      <TextField fx:id="newSalaryTextField" editable="false" layoutX="288.0" layoutY="358.0" />
+   </children>
+</AnchorPane>

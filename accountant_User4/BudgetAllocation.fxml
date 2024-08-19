@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="465.0" prefWidth="600.0" style="-fx-background-color: #4cbb77;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="accountant_User4.BudgetAllocationController">
+   <children>
+      <Label layoutX="236.0" layoutY="25.0" text="Budget Allocation" underline="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="102.0" layoutY="106.0" text="Department" />
+      <Label layoutX="100.0" layoutY="160.0" text="Budget Type" />
+      <Label layoutX="102.0" layoutY="212.0" text="Amount Allocated" />
+      <Label layoutX="102.0" layoutY="264.0" text="Date" />
+      <ComboBox fx:id="departmentComboBox" layoutX="248.0" layoutY="101.0" prefHeight="31.0" prefWidth="187.0" />
+      <ComboBox fx:id="budgetTypeComboBox" layoutX="248.0" layoutY="155.0" prefHeight="31.0" prefWidth="193.0" />
+      <DatePicker fx:id="allocationDatePicker" layoutX="248.0" layoutY="249.0" />
+      <TextField fx:id="amountTextField" layoutX="257.0" layoutY="207.0" />
+      <Button layoutX="119.0" layoutY="318.0" mnemonicParsing="false" onAction="#allocateBudgetOnMouseClick" text="Allocate Budget" />
+      <Button layoutX="334.0" layoutY="318.0" mnemonicParsing="false" onAction="#checkBudgetListOnMouseClick" text="Check Budget List" />
+   </children>
+</AnchorPane>

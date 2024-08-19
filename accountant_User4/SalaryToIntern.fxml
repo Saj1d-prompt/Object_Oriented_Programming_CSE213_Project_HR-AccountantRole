@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="619.0" prefWidth="709.0" style="-fx-background-color: lime;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="accountant_User4.SalaryToInternController">
+   <children>
+      <Label layoutX="106.0" layoutY="91.0" text="Intern ID" />
+      <Label layoutX="105.0" layoutY="132.0" text="Intern Name" />
+      <Label layoutX="105.0" layoutY="174.0" text="Contact Number" />
+      <Label layoutX="106.0" layoutY="224.0" text="Recruited Department" />
+      <Label layoutX="110.0" layoutY="275.0" text="Payment Status" />
+      <TextField fx:id="internNameTextField" editable="false" layoutX="290.0" layoutY="127.0" />
+      <TextField fx:id="ConNumberTextField" editable="false" layoutX="290.0" layoutY="169.0" />
+      <TextField fx:id="recruitDeptTextField" editable="false" layoutX="290.0" layoutY="219.0" />
+      <TextField fx:id="statusTextField" editable="false" layoutX="290.0" layoutY="270.0" />
+      <ComboBox fx:id="internIDComboBox" layoutX="290.0" layoutY="86.0" onAction="#internIDSelectionOnMouseClick" prefWidth="150.0" />
+      <Label layoutX="115.0" layoutY="333.0" text="Salary" />
+      <TextField fx:id="salaryTextField" layoutX="290.0" layoutY="328.0" />
+      <Label layoutX="299.0" layoutY="23.0" prefHeight="31.0" prefWidth="112.0" style="-fx-background-color: lime;" text="Salary To Intern">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="298.0" layoutY="405.0" mnemonicParsing="false" onAction="#declareSalaryOnMouseClick" text="Declare Salary" />
+   </children>
+</AnchorPane>

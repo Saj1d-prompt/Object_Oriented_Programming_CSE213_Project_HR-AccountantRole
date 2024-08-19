@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="512.0" prefWidth="549.0" style="-fx-background-color: e05959;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="accountant_User4.ExpenseReimbursementRecordController">
+   <children>
+      <Label layoutX="196.0" layoutY="28.0" text="Reimbursemnt Record" underline="true">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="86.0" text="Employee Name" />
+      <Label layoutX="80.0" layoutY="124.0" text="Employee ID" />
+      <Label layoutX="82.0" layoutY="159.0" text="Department" />
+      <Label layoutX="82.0" layoutY="196.0" text="Amount" />
+      <Label layoutX="89.0" layoutY="235.0" text="Status" />
+      <Label layoutX="85.0" layoutY="275.0" text="Expense Type" />
+      <TextField fx:id="employeeNameTextField" layoutX="211.0" layoutY="81.0" />
+      <TextField fx:id="employeeIDTextField" layoutX="211.0" layoutY="119.0" />
+      <TextField fx:id="amountTextField" layoutX="211.0" layoutY="191.0" />
+      <RadioButton fx:id="payAbleRadioButton" layoutX="211.0" layoutY="235.0" mnemonicParsing="false" text="Payable" />
+      <RadioButton fx:id="notPayableRadioButton" layoutX="354.0" layoutY="235.0" mnemonicParsing="false" text="Not Payable" />
+      <ComboBox fx:id="deptComboBox" layoutX="211.0" layoutY="154.0" prefHeight="31.0" prefWidth="187.0" />
+      <ComboBox fx:id="expenseTypeComboBox" layoutX="215.0" layoutY="270.0" prefHeight="31.0" prefWidth="187.0" />
+      <Button layoutX="123.0" layoutY="357.0" mnemonicParsing="false" onAction="#saveDataButtonOnMouseClick" prefHeight="54.0" prefWidth="133.0" text="Save Record" />
+      <Button layoutX="339.0" layoutY="357.0" mnemonicParsing="false" onAction="#reimbersementRecordListOnMouseClick" prefHeight="54.0" prefWidth="126.0" text="Reimbursement Record List" wrapText="true" />
+   </children>
+</AnchorPane>
