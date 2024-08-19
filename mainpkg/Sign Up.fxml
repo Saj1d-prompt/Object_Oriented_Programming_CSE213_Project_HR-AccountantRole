@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="750.0" style="-fx-background-color: Lavender;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.SignUpController">
+   <children>
+      <Label layoutX="85.0" layoutY="165.0" prefHeight="17.0" prefWidth="77.0" text="Full Name" />
+      <Label layoutX="82.0" layoutY="217.0" prefHeight="17.0" prefWidth="96.0" text="User Name" />
+      <Label layoutX="84.0" layoutY="267.0" prefHeight="17.0" prefWidth="96.0" text="Phone Number" />
+      <Label layoutX="425.0" layoutY="165.0" prefHeight="17.0" prefWidth="96.0" text="Date Of Birth" />
+      <Label layoutX="425.0" layoutY="217.0" prefHeight="17.0" prefWidth="106.0" text="New Password" />
+      <Label layoutX="425.0" layoutY="267.0" prefHeight="17.0" prefWidth="96.0" text="Confirm Password" />
+      <TextField fx:id="newUserNameTextField" layoutX="171.0" layoutY="213.0" />
+      <TextField fx:id="newUserPhoneNumberTextField" layoutX="171.0" layoutY="263.0" />
+      <TextField fx:id="newPasswordTextField" layoutX="530.0" layoutY="213.0" />
+      <TextField fx:id="confirmPasswordTextField" layoutX="530.0" layoutY="263.0" />
+      <DatePicker fx:id="newUserDob" layoutX="530.0" layoutY="161.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="84.0" layoutY="79.0" text="Register New Account" textFill="#3300ff">
+         <font>
+            <Font name="System Bold Italic" size="33.0" />
+         </font>
+      </Label>
+      <Button fx:id="signup" layoutX="496.0" layoutY="424.0" mnemonicParsing="false" onAction="#createAccountButtonOnClick" prefHeight="40.0" prefWidth="149.0" text="Create New Account" textFill="#0030ff">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="goback" layoutX="123.0" layoutY="424.0" mnemonicParsing="false" onAction="#goBackButtonOnClick" prefHeight="40.0" prefWidth="115.0" text="Go Back" />
+      <TextField fx:id="newNameTextField" layoutX="171.0" layoutY="161.0" />
+      <ComboBox fx:id="userTypeComboBox" layoutX="170.0" layoutY="312.0" prefHeight="27.0" prefWidth="510.0" promptText="Register as:" />
+      <Label layoutX="85.0" layoutY="317.0" text="User Type" />
+   </children>
+</AnchorPane>
