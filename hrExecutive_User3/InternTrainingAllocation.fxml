@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="537.0" prefWidth="615.0" style="-fx-background-color: #42c9be;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hrExecutive_User3.InternTrainingAllocationController">
+   <children>
+      <Label layoutX="102.0" layoutY="136.0" text="Intern ID" />
+      <Label layoutX="102.0" layoutY="182.0" text="Intern Name" />
+      <Label layoutX="102.0" layoutY="226.0" text="Recruited Department" />
+      <Label layoutX="102.0" layoutY="269.0" text="Contact Number" />
+      <Label layoutX="198.0" layoutY="34.0" text="Intern Training Allocation" underline="true">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="internIDComboBox" layoutX="273.0" layoutY="131.0" onAction="#internIDComboBoxOnMouseClick" prefHeight="31.0" prefWidth="173.0" />
+      <Label layoutX="102.0" layoutY="315.0" text="Trainings Available" />
+      <Label fx:id="nameLabel" layoutX="273.0" layoutY="179.0" prefHeight="27.0" prefWidth="173.0" />
+      <Label fx:id="deptLabel" layoutX="273.0" layoutY="223.0" prefHeight="27.0" prefWidth="173.0" />
+      <Label fx:id="numberLabel" layoutX="273.0" layoutY="266.0" prefHeight="27.0" prefWidth="173.0" />
+      <ComboBox fx:id="trainingComboBox" layoutX="273.0" layoutY="310.0" prefHeight="31.0" prefWidth="173.0" />
+      <Button layoutX="132.0" layoutY="390.0" mnemonicParsing="false" onAction="#allocateTrainingButtonOnMouseClick" text="Allocate Training" />
+      <Button layoutX="396.0" layoutY="390.0" mnemonicParsing="false" onAction="#trainingListButtonOnMouseClick" text="Training List" />
+   </children>
+</AnchorPane>
